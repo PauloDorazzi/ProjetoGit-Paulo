@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["title"] = "Contatos";
+}
+
+<div>
+    <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar Contato </a>
+</div>
+<br />
+<div class="text-center">
+    <h1 class="display-4">LISTA DE CONTATOS</h1>
+
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Celular</th>
+            <th scope="col">Email</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Paulo</td>
+            <td>98136-4164</td>
+            <td>mdo@gmail.com</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Excluir</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>4002-0922</td>
+            <td>fat@gmail.com</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Excluir</a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>4002-8922</td>
+            <td>twitter@gmail.com</td>
+            <td>
+                <div class="btn-group" role="group">
+                    <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Excluir</a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
